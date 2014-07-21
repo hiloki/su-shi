@@ -1,0 +1,67 @@
+:host {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 36px;
+}
+:host > div {
+  height: 6px;
+  border-radius: 3px;
+}
+[class^="neta-"] {
+  margin-bottom: 6px;
+}
+[id="wasabi"] {
+  margin-bottom: 6px;
+  background: #A2C266;
+}
+.is-nuki {
+  border: 1px dashed rgba(255,255,255,0.2);
+  background-color: transparent;
+}
+.shari {
+  background: #FCFDFD;
+}
+
+/* Neta */
+.neta-maguro { /* = Tuna */
+  background-color: #CA3E3E;
+}
+.neta-ika { /* Cuttlefish */
+  background-color: #FFF8EB;
+}
+.neta-gyoku { /* = Egg */
+  background-color: #F2CA1A;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    transparent 40%,
+    #002000 40%,
+    #002000 60%,
+    transparent 60%,
+    transparent 100%
+  );
+}
+.neta-toro { /* = Tuna */
+  background-color: #FF6D5F;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 4px,
+    rgba(255,255,255,0.3) 4px,
+    rgba(255,255,255,0.5) 5px
+  );
+}
+.neta-saba { /* = Mackerel */
+  background-color: #F3E0C4;
+  background-image: linear-gradient(
+    -8deg,
+    transparent,
+    transparent 40%,
+    #E7C19D 40%,
+    #E7C19D 50%,
+    #DADAFF 50%,
+    #959BB1 60%, 
+    #4A5B5F 70%,
+    #4A5B5F 100%
+  );
+}

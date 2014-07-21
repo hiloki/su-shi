@@ -1,0 +1,9 @@
+{
+  "name": "su-shi",
+  "version": "0.0.0",
+  "keywords": "seed, polymer, web-components",
+  "main": "su-shi.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.3.1"
+  }
+}

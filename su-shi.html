@@ -1,0 +1,40 @@
+<link rel="import" href="./libs/polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <su-shi></su-shi>
+
+@element su-shi
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@homepage http://hiloki.github.io/su-shi
+-->
+<polymer-element name="su-shi" attributes="neta wasabi">
+
+  <template>
+
+    <link rel="stylesheet" href="su-shi.css" />
+
+    <div class="neta-{{neta}}"></div>
+    <div id="wasabi"></div>
+    <div class="shari"></div>
+
+  </template>
+
+  <script>
+  // @neta 'maguro', 'ika', 'toro', 'gyoku', 'saba'
+  // @wasabi boolean
+  Polymer({
+    neta: 'maguro',
+    wasabi: true,
+    wasabiChanged: function(){
+      this.$.wasabi.classList.add('is-nuki');
+    }
+  });
+
+  </script>
+
+</polymer-element>

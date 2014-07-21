@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+<title>su-shi Demo</title>
+<script src="./libs/platform/platform.js"></script>
+<link rel="import" href="su-shi.html">
+<link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
+<style>
+html {
+  margin-top: 10%;
+  text-align: center;
+  background: url(./geta.png);
+  background-size: 150px;
+}
+
+h1 {
+	text-align: center;
+  font-family: 'Lemon', serif;
+  font-size: 4em;
+  color: #030003;
+}
+h1 > b {
+  text-transform: uppercase;
+}
+.geta {
+	margin: 30px;
+	display: inline-block;
+  border-radius: 3px;
+  padding: 40px 20px;
+  box-shadow: 0 3px 4px rgba(100,100,100,0.5);
+  background: radial-gradient(
+    circle at 50% -100%,
+    white 10%,
+    #030003,
+    #101
+  );
+}
+.dish {
+	margin: 30px auto;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0.5em 2em;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(100,100,100,0.5),
+              inset 0 0 10px 5px #FFF,
+              inset 0 0 30px rgba(20,0,20,0.3);
+  text-align-last: left;
+  font-family: consolas, sans-serif;
+  color: #423535;
+}
+
+.hl-elm {
+  font-weight: bold;
+  color: #D88A5E;
+}
+
+.hl-attr {
+  font-weight: bold;
+  color: #8C9C49;
+}
+
+.hl-val {
+  color: #E06363;
+}
+</style>
+</head>
+<body unresolved>
+
+<h1><b>Sushi</b> menu</h1>
+<!-- Use element -->
+<div class="geta">
+	<su-shi></su-shi>
+	<su-shi neta="ika"></su-shi>
+	<su-shi neta="toro"></su-shi>
+	<su-shi neta="gyoku"></su-shi>
+	<su-shi neta="saba" wasabi="false"></su-shi>
+</div>
+
+<div class="dish">
+<pre><code class="html">&lt;<span class="hl-elm">su-shi</span> <span class="hl-attr">neta</span>=<span class="hl-val">&quot;maguro&quot;</span> <span class="hl-attr">wasabi</span>=<span class="hl-val">&quot;true&quot;&gt;</span>&lt;<span class="hl-elm">/su-shi</span>&gt;</code></pre>
+</div>
+</body>
+</html>
